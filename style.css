@@ -88,10 +88,10 @@ a {
 }
 
 .btn-elg {
-    font-size: 16px;
-    letter-spacing: 1px;
-    padding: 20px 50px;
-    border-radius: 5px 0px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 20px 50px;
+  border-radius: 5px 0px;
 }
 
 /* ........header......... */
@@ -282,9 +282,8 @@ a {
   border: solid 1px #aefdd9;
 }
 .monthly:hover {
-    background-color: #f1fff8;
-  }
-  
+  background-color: #f1fff8;
+}
 
 .brd-l-5 {
   border-top-left-radius: 5px;
@@ -310,7 +309,7 @@ a {
   transition: all 0.4s;
 }
 .card-items:not(:last-child) {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 .card-price {
   font-size: 72px;
@@ -319,41 +318,40 @@ a {
   margin-top: 31px;
 }
 .card-lists {
-    padding: 60px 60px 0;
-    min-height: 300px;
+  padding: 60px 0 0 0;
+  min-height: 300px;
 }
 
 .card-lists__items {
-    display: block;
-    margin-bottom: 20px;
+  display: block;
+  margin-bottom: 20px;
 }
 .mr-t-50 {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .card-items:hover {
-    box-shadow: 0 7px 24px 10px rgb(83 83 83 / 10%);
-    background-color: #fff;
-    border-top: solid 4px #0a8aff;
+  box-shadow: 0 7px 24px 10px rgb(83 83 83 / 10%);
+  background-color: #fff;
+  border-top: solid 4px #0a8aff;
 }
 
 .active {
-    box-shadow: 0 7px 24px 10px rgb(83 83 83 / 10%);
-    background-color: #fff;
-    border-top: solid 4px #0a8aff;
+  box-shadow: 0 7px 24px 10px rgb(83 83 83 / 10%);
+  background-color: #fff;
+  border-top: solid 4px #0a8aff;
 }
 
 /* .........carousle......... */
 .carousle {
-  background: linear-gradient(to right, white 40%,#313a5a 40%);
+  background: linear-gradient(to right, white 40%, #313a5a 40%);
 }
 .carousle-items {
   position: relative;
   padding: 170px 0;
 }
 .caroulse-image {
-  background: url(sitesvg/quotes\ big.svg)
-  no-repeat center/cover;
+  background: url(sitesvg/quotes\ big.svg) no-repeat center/cover;
   height: 413px;
   width: 300px;
   position: absolute;
@@ -375,10 +373,9 @@ a {
   background-color: rgba(255, 255, 255, 0.95);
   white-space: normal;
   margin-right: 40px;
-
 }
 .author-name {
-  color:  #031d5b;
+  color: #031d5b;
   font-weight: 500;
   line-height: 2px;
   margin-top: 43px;
@@ -389,10 +386,10 @@ a {
 }
 .carousleslide-items {
   margin-left: auto;
-    white-space: nowrap;
-    width: 70%;
-    height: 100%;
-    overflow: hidden;
+  white-space: nowrap;
+  width: 70%;
+  height: 100%;
+  overflow: hidden;
 }
 .active-card {
   background-color: #1fdb84;
@@ -406,7 +403,7 @@ a {
 .active-author {
   color: white;
 }
-.dotlinks{
+.dotlinks {
   display: inline-block;
   padding: 7px;
   border: 2px solid #fff;
@@ -447,21 +444,21 @@ a {
   text-align: center;
   padding-bottom: 115px;
 }
- .footer-heading {
+.footer-heading {
   color: #5b6c94;
- }
+}
 
- .footer-links {
- color: #5b6c94;
- }
- .footer-links:not(:last-child) {
+.footer-links {
+  color: #5b6c94;
+}
+.footer-links:not(:last-child) {
   margin-right: 20px;
- }
+}
 
- .footer-links:not(:last-child):after {
+.footer-links:not(:last-child):after {
   content: "/";
   padding-left: 20px;
- }
+}
 .footer-nav {
   margin-top: 50px;
 }
@@ -530,11 +527,11 @@ a {
   }
   .plan-details {
     padding: 100px 0;
-}
-.monthly {
+  }
+  .monthly {
     font-size: 10px;
     padding: 12px 20px;
-}
+  }
 }
 
 /* 
@@ -562,6 +559,6 @@ a {
   transition: transform 400ms;
 }
 
-.nav-bgcolor{
-    background-color: #2a2a2ae0;
-  }
+.nav-bgcolor {
+  background-color: #2a2a2ae0;
+}
