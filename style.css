@@ -8,6 +8,7 @@ body {
   color: #f8f9fc;
   font-family: "Rubik", sans-serif;
 }
+
 .heading-xl {
   font-size: 48px;
   font-weight: 700;
@@ -384,12 +385,16 @@ a {
 .card-text {
   margin-top: 23px;
 }
+
 .carousleslide-items {
   margin-left: auto;
   white-space: nowrap;
   width: 70%;
   height: 100%;
-  overflow: hidden;
+  overflow-x: scroll;
+}
+.carousleslide-items::-webkit-scrollbar {
+  display: none;
 }
 .active-card {
   background-color: #1fdb84;
@@ -403,7 +408,7 @@ a {
 .active-author {
   color: white;
 }
-.dotlinks {
+.dot {
   display: inline-block;
   padding: 7px;
   border: 2px solid #fff;
@@ -415,6 +420,12 @@ a {
   position: absolute;
   bottom: 10%;
   left: 50%;
+}
+.dot:hover {
+  background-color: #f8f9fc;
+}
+.dot.active {
+  background-color: #f8f9fc;
 }
 /* ..........other-platforms...section..... */
 
@@ -560,5 +571,5 @@ a {
 }
 
 .nav-bgcolor {
-  background-color: #2a2a2ae0;
+  background-color: #20402deb;
 }
