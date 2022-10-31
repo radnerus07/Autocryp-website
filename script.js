@@ -57,7 +57,7 @@ function revertBack(){
 //     else{
 //       let displayArea = slider.parentElement.clientWidth;
 //       // console.log(displayAreaWidth);
-//       let pixels = displayArea * clickedDotNum;
+//       let pixels = -displayArea * clickedDotNum;
 //       slider.style.transform = 'translateX(' + pixels + 'px)';
 //       dots[activeDotNum].classList.remove('active');
 //       cards[activeDotNum].classList.remove('active-card');
@@ -76,21 +76,15 @@ const cards = document.querySelectorAll('.carousle-cards');
 const dots = document.querySelectorAll('.dot');
 
 let slideWidth = cards[0].offsetWidth + 40;
-console.log(cards)
+// console.log(cards)
 let activeDotNum = 0;
 
-slider.addEventListener('scroll', (e) => {
-    scrollPosition = slider.scrollLeft;
-});
-
 dots.forEach((slideItem) => {
-  
-    slideItem .addEventListener('click', (e) => {
-        let slideNumber = slideItem.getAttribute('data-slide');
-        slider.scrollLeft = slideNumber * slideWidth;
+const slideNumber = slideItem.getAttribute('data-slide');
+    slideItem.addEventListener('click', () => {
+        cards[0].style.marginLeft = -(slideNumber-1) * slideWidth + "px";
      })
-})
-
+}) 
 dots.forEach((dot, idx)  => {
   dot.setAttribute('data-num', idx);
 
@@ -106,6 +100,7 @@ dots.forEach((dot, idx)  => {
     }
   });
 });
+
 
 
 

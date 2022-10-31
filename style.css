@@ -375,7 +375,7 @@ a {
   background-color: rgba(255, 255, 255, 0.95);
   white-space: normal;
   margin-right: 40px;
-  transition: background-color 1s ease-in;
+  transition: all 1s ease-in;
   
 }
 .author-name {
@@ -501,7 +501,7 @@ a {
     font-size: 30px;
   }
   .heading-lg {
-    font-size: 25px;
+    font-size: 20px;
     line-height: 28px;
 }
   .paragraph-md {
@@ -555,9 +555,18 @@ a {
     padding: 12px 20px;
   }
   .caroulse-image {
-    height: 213px;
-    width: 200px;
+    height: 180px;
+    width: 120px;
     left: 41px;
+}
+.carousle-cards {
+  width: calc(100% - 40px);
+    scroll-snap-align: center;
+    padding: 50px 20px 50px 20px;
+    min-height: 300px;
+}
+.carousleslide-items {
+  width: 90%;
 }
 }
 
