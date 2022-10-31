@@ -43,87 +43,70 @@ function revertBack(){
 
 
 // const slider = document.querySelector('.carousleslide-items');
-// const cards = document.querySelectorAll('.carousle-cards')
-
+// const cards = document.querySelectorAll('.carousle-cards');
 // const dots = document.querySelectorAll('.dot');
 
 // let activeDotNum = 0;
-
+// let counter = 0;
+// const size = cards[0].clientWidth;
 // dots.forEach((dot, idx)  => {
 //   dot.setAttribute('data-num', idx);
-
 //   dot.addEventListener('click', e => {
 //     let clickedDotNum = e.target.dataset.num;
 //     if(clickedDotNum == activeDotNum) { return; }
 //     else{
-//       let displayAreaWidth = document.querySelector('.carousleslide-items').clientWidth;
+//       let displayArea = slider.parentElement.clientWidth;
 //       // console.log(displayAreaWidth);
-//       let pixelsToMove = -displayAreaWidth * clickedDotNum;
-//       slider.style.transform = 'translateX('+ pixelsToMove + ' px)';
+//       let pixels = displayArea * clickedDotNum;
+//       slider.style.transform = 'translateX(' + pixels + 'px)';
 //       dots[activeDotNum].classList.remove('active');
+//       cards[activeDotNum].classList.remove('active-card');
 //       dots[clickedDotNum].classList.add('active');
+//       cards[clickedDotNum].classList.add('active-card');
 //       activeDotNum = clickedDotNum;
 //     }
 //   });
 // });
 
 
-// const sliderCards = document.querySelectorAll('.carousle-cards');
-// const dots = document.querySelectorAll('.dot');
 
 
-// // console.log(dots);
-
-// function removeActive() {
-
-//     for (let i=0; i< sliderCards.children.length; i++)
-//     {
-//         if (sliderCards.children[i].classList.remove("active-cards") > -1){
-//             intCurrent = i;
-//         }
-//         sliderCards.children[i].classList.remove('active-cards');
-//         dots.children[i].classList.remove('active');
-//     }
-// }
-
-// function addActive(intCurrent)
-// {
-//     sliderCards.children[intCurrent].classList.add("active-cards");
-//     dots.children[intCurrent].classList.add("active-cards");
-// }
-// function init() {
-//     sliderCards.children[0].classList.add("active-cards");
-//     dots.children[0].classList.add("active");
-//   }
-//   init();
-
-//   dots.addEventListener("click", function (e) {
-//     if(e.target.className !=="dot") {
-//         return;
-//     }
-//     let intNewIndex = e.target.dataset.num;
-//     removeActive();asdw
-//     addActive(intNewIndex);
-//   });
 const slider = document.querySelector('.carousleslide-items');
 const cards = document.querySelectorAll('.carousle-cards');
 const dots = document.querySelectorAll('.dot');
 
+let slideWidth = cards[0].offsetWidth + 40;
+console.log(cards)
+let activeDotNum = 0;
 
-let slideWidth = cards[0].offsetWidth + 420;
-
-
-
-
-slider .addEventListener('scroll', (e) => {
-    scrollPosition = slider .scrollLeft;
+slider.addEventListener('scroll', (e) => {
+    scrollPosition = slider.scrollLeft;
 });
 
-dots.forEach(slideItem => {
-
+dots.forEach((slideItem) => {
+  
     slideItem .addEventListener('click', (e) => {
-        let slideNumber = slideItem .getAttribute('data-slide');
-        slider .scrollLeft = slideNumber * slideWidth;
+        let slideNumber = slideItem.getAttribute('data-slide');
+        slider.scrollLeft = slideNumber * slideWidth;
      })
 })
+
+dots.forEach((dot, idx)  => {
+  dot.setAttribute('data-num', idx);
+
+  dot.addEventListener('click', e => {
+    let clickedDotNum = e.target.dataset.num;
+    if(clickedDotNum == activeDotNum) { return; }
+    else{
+      dots[activeDotNum].classList.remove('active');
+      cards[activeDotNum].classList.remove('active-card');
+      dots[clickedDotNum].classList.add('active');
+      cards[clickedDotNum].classList.add('active-card');
+      activeDotNum = clickedDotNum;
+    }
+  });
+});
+
+
+
 

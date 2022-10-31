@@ -350,6 +350,7 @@ a {
 .carousle-items {
   position: relative;
   padding: 170px 0;
+  
 }
 .caroulse-image {
   background: url(sitesvg/quotes\ big.svg) no-repeat center/cover;
@@ -374,6 +375,8 @@ a {
   background-color: rgba(255, 255, 255, 0.95);
   white-space: normal;
   margin-right: 40px;
+  transition: background-color 1s ease-in;
+  
 }
 .author-name {
   color: #031d5b;
@@ -392,20 +395,23 @@ a {
   width: 70%;
   height: 100%;
   overflow-x: scroll;
+  scroll-behavior: smooth;
+  transition: ease .6ms;
 }
 .carousleslide-items::-webkit-scrollbar {
   display: none;
 }
 .active-card {
   background-color: #1fdb84;
+  
 }
-.quotes-active {
+.active-card .quotes-active {
   fill: #f8f9fc;
 }
-.active-text {
+.active-card .card-text {
   color: #fff;
 }
-.active-author {
+.active-card .author-name {
   color: white;
 }
 .dot {
@@ -495,12 +501,17 @@ a {
     font-size: 30px;
   }
   .heading-lg {
-    font-size: 30px;
+    font-size: 25px;
     line-height: 28px;
-  }
+}
   .paragraph-md {
     font-size: 14px;
     line-height: 22px;
+  }
+  .paragraph-lg {
+    font-size: 16px;
+    line-height: 26px;
+   
   }
   .hero-image img {
     max-width: 100%;
@@ -543,6 +554,11 @@ a {
     font-size: 10px;
     padding: 12px 20px;
   }
+  .caroulse-image {
+    height: 213px;
+    width: 200px;
+    left: 41px;
+}
 }
 
 /* 
