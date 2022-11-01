@@ -75,7 +75,7 @@ const slider = document.querySelector('.carousleslide-items');
 const cards = document.querySelectorAll('.carousle-cards');
 const dots = document.querySelectorAll('.dot');
 
-let slideWidth = cards[0].offsetWidth + 40;
+let slideWidth = cards[0].offsetWidth + 50;
 // console.log(cards)
 let activeDotNum = 0;
 
