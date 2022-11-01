@@ -564,6 +564,9 @@ a {
   .carousleslide-items {
     width: 90%;
   }
+  .footer-links:not(:last-child) {
+    margin-right: 4px;
+}
 }
 
 /* 
