@@ -96,8 +96,8 @@ a {
 }
 button {
   background: none;
-border: none;
-text-decoration: none;
+  border: none;
+  text-decoration: none;
 }
 
 /* ........header......... */
@@ -223,6 +223,7 @@ text-decoration: none;
 }
 
 .fnt-fm-chge {
+  font-size: 17px;
   font-weight: 500;
 }
 .characters-heading {
@@ -491,16 +492,21 @@ text-decoration: none;
   .nav-right {
     display: none;
   }
-  .characters-cards {
-    width: calc((100% - 100px) / 2);
-  }
-  .card-items {
-    padding: 56px 0;
-    max-width: 400px;
-  }
   .btn-elg {
     padding: 20px 20px;
 }
+.fnt-fm-chge {
+  font-size: 16px;
+}
+}
+
+@media screen and (max-width: 992px) {
+
+  .characters-cards {
+    width: 100%;
+    vertical-align: top;
+  }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -545,20 +551,17 @@ text-decoration: none;
   .hero-content {
     padding-top: 68px;
   }
-  .characters-cards {
-    width: 100%;
-    vertical-align: top;
-  }
-  .card-items {
-    width: 100%;
-    margin-top: 10px;
-  }
   .plan-details {
     padding: 100px 0;
   }
   .monthly {
     font-size: 10px;
     padding: 12px 20px;
+  }
+  .card-items {
+    width: 100%;
+    margin-top: 10px;
+    max-width: 400px;
   }
   .caroulse-image {
     height: 180px;
